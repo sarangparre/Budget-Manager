@@ -280,10 +280,10 @@ var UIController = (function () {
     changedType: function () {
       var fields = document.querySelectorAll(
         DOMStrings.inputType +
-          "," +
-          DOMStrings.inputDescription +
-          "," +
-          DOMStrings.inputValue
+        "," +
+        DOMStrings.inputDescription +
+        "," +
+        DOMStrings.inputValue
       );
       nodeListForEach(fields, function (cur) {
         cur.classList.toggle("red-focus");
@@ -391,7 +391,6 @@ var controller = (function (budgetCtrl, UICtrl) {
 
   return {
     init: function () {
-      console.log("application is started");
       UICtrl.displayMonth();
       UICtrl.displayBudget({
         budget: 0,
